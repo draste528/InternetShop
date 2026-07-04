@@ -94,8 +94,15 @@
 		3E8B2B692FEEE8AB008BF7C3 /* InternetShop */ = {
 			isa = PBXGroup;
 			children = (
-				3E8B2B6A2FEEE8AB008BF7C3 /* InternetShopApp.swift */,
-				3E8B2B6C2FEEE8AB008BF7C3 /* ContentView.swift */,
+				3EB621152FF984A400D50DA9 /* Resources */,
+				3EB621142FF9849700D50DA9 /* Extensions */,
+				3EB621132FF9847600D50DA9 /* Components */,
+				3EB621122FF9845A00D50DA9 /* Networking */,
+				3EB621112FF9843B00D50DA9 /* Services */,
+				3EB621102FF9842D00D50DA9 /* ViewModels */,
+				3EB6210F2FF9841D00D50DA9 /* Models */,
+				3EB6210E2FF9840200D50DA9 /* Views */,
+				3EB6210C2FF983CF00D50DA9 /* App */,
 				3E8B2B6E2FEEE8AC008BF7C3 /* Assets.xcassets */,
 				3E8B2B702FEEE8AC008BF7C3 /* Preview Content */,
 			);
@@ -125,6 +132,71 @@
 				3E8B2B872FEEE8AC008BF7C3 /* InternetShopUITestsLaunchTests.swift */,
 			);
 			path = InternetShopUITests;
+			sourceTree = "<group>";
+		};
+		3EB6210C2FF983CF00D50DA9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3E8B2B6A2FEEE8AB008BF7C3 /* InternetShopApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3EB6210E2FF9840200D50DA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E8B2B6C2FEEE8AB008BF7C3 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3EB6210F2FF9841D00D50DA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3EB621102FF9842D00D50DA9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3EB621112FF9843B00D50DA9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3EB621122FF9845A00D50DA9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3EB621132FF9847600D50DA9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3EB621142FF9849700D50DA9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3EB621152FF984A400D50DA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
