@@ -24,6 +24,7 @@ struct BrandSection: View {
 
             Text("furniture store")
                 .font(.system(size: 12))
+            
         }
     }
 }
