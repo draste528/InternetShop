@@ -15,6 +15,9 @@ struct BrandSection: View {
         VStack(spacing: 12) {
 
             Image("LOGO")
+                .resizable()
+                .scaleToFit().
+                frame(width: 220)
 
             Text("MINIMALIST")
                 .font(.system(size: 20, weight: .bold))
