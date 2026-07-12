@@ -98,17 +98,17 @@
 		3E8B2B692FEEE8AB008BF7C3 /* InternetShop */ = {
 			isa = PBXGroup;
 			children = (
-				3EB621152FF984A400D50DA9 /* Resources */,
-				3EB621142FF9849700D50DA9 /* Extensions */,
-				3EB621132FF9847600D50DA9 /* Components */,
-				3EB621122FF9845A00D50DA9 /* Networking */,
-				3EB621112FF9843B00D50DA9 /* Services */,
-				3EB621102FF9842D00D50DA9 /* ViewModels */,
-				3EB6210F2FF9841D00D50DA9 /* Models */,
-				3EB6210E2FF9840200D50DA9 /* Views */,
-				3EB6210C2FF983CF00D50DA9 /* App */,
-				3E8B2B6E2FEEE8AC008BF7C3 /* Assets.xcassets */,
 				3E8B2B702FEEE8AC008BF7C3 /* Preview Content */,
+				B08F0CB63003F9A40058DF92 /* Utilities */,
+				B08F0CB53003F9960058DF92 /* Extensions */,
+				B08F0CB43003F9880058DF92 /* Networking */,
+				B08F0CB33003F96E0058DF92 /* Services */,
+				B08F0CB23003F9250058DF92 /* ViewModels */,
+				B08F0CAC3003F8570058DF92 /* Views */,
+				B08F0CA53003F7F60058DF92 /* Components */,
+				B08F0C9A3003F5600058DF92 /* Models */,
+				B08F0C973003F4CC0058DF92 /* Resources */,
+				B08F0C963003F4BC0058DF92 /* App */,
 			);
 			path = InternetShop;
 			sourceTree = "<group>";
@@ -138,7 +138,7 @@
 			path = InternetShopUITests;
 			sourceTree = "<group>";
 		};
-		3EB6210C2FF983CF00D50DA9 /* App */ = {
+		B08F0C963003F4BC0058DF92 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				3E8B2B6A2FEEE8AB008BF7C3 /* InternetShopApp.swift */,
@@ -146,63 +146,167 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		3EB6210E2FF9840200D50DA9 /* Views */ = {
+		B08F0C973003F4CC0058DF92 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3E8B2B6C2FEEE8AB008BF7C3 /* ContentView.swift */,
+				B08F0CB73003FC690058DF92 /* Fonts */,
+				3E8B2B6E2FEEE8AC008BF7C3 /* Assets.xcassets */,
 			);
-			path = Views;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		3EB6210F2FF9841D00D50DA9 /* Models */ = {
+		B08F0C9A3003F5600058DF92 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		3EB621102FF9842D00D50DA9 /* ViewModels */ = {
+		B08F0CA53003F7F60058DF92 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B08F0CAB3003F8430058DF92 /* TabBar */,
+				B08F0CAA3003F8330058DF92 /* Common */,
+				B08F0CA93003F82C0058DF92 /* Cells */,
+				B08F0CA83003F8240058DF92 /* Cards */,
+				B08F0CA73003F8190058DF92 /* Brand */,
+				B08F0CA63003F80E0058DF92 /* Buttons */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B08F0CA63003F80E0058DF92 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3E9F6E852FFABD3500D2E94F /* StartShopButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		B08F0CA73003F8190058DF92 /* Brand */ = {
+			isa = PBXGroup;
+			children = (
+				3E9F6E832FFABCD800D2E94F /* BrandSection.swift */,
+			);
+			path = Brand;
+			sourceTree = "<group>";
+		};
+		B08F0CA83003F8240058DF92 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		B08F0CA93003F82C0058DF92 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B08F0CAA3003F8330058DF92 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B08F0CAB3003F8430058DF92 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		B08F0CAC3003F8570058DF92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B08F0CB13003F8BB0058DF92 /* Settings */,
+				B08F0CB03003F8A60058DF92 /* Cart */,
+				B08F0CAF3003F8860058DF92 /* Favorites */,
+				B08F0CAE3003F8700058DF92 /* Catalog */,
+				B08F0CAD3003F8620058DF92 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B08F0CAD3003F8620058DF92 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3E8B2B6C2FEEE8AB008BF7C3 /* ContentView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B08F0CAE3003F8700058DF92 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		B08F0CAF3003F8860058DF92 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		B08F0CB03003F8A60058DF92 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		B08F0CB13003F8BB0058DF92 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B08F0CB23003F9250058DF92 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		3EB621112FF9843B00D50DA9 /* Services */ = {
+		B08F0CB33003F96E0058DF92 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		3EB621122FF9845A00D50DA9 /* Networking */ = {
+		B08F0CB43003F9880058DF92 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		3EB621132FF9847600D50DA9 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				3E9F6E832FFABCD800D2E94F /* BrandSection.swift */,
-				3E9F6E852FFABD3500D2E94F /* StartShopButton.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		3EB621142FF9849700D50DA9 /* Extensions */ = {
+		B08F0CB53003F9960058DF92 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		3EB621152FF984A400D50DA9 /* Resources */ = {
+		B08F0CB63003F9A40058DF92 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Resources;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B08F0CB73003FC690058DF92 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
