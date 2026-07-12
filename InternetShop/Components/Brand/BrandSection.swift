@@ -16,8 +16,8 @@ struct BrandSection: View {
 
             Image("LOGO")
                 .resizable()
-                .scaleToFit().
-                frame(width: 220)
+                .scaledToFit()
+                .frame(width: 220)
 
             Text("MINIMALIST")
                 .font(.system(size: 20, weight: .bold))
