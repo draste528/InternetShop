@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "SOFAS",
+    "thumbnailurl": "",
+    "subCategories": []
+  },
+  {
+    "id": "2",
+    "name": "CHAIRS",
+    "thumbnailurl": "",
+    "subCategories": []
+  },
+  {
+    "id": "3",
+    "name": "TABLES",
+    "thumbnailurl": "",
+    "subCategories": []
+  },
+  {
+    "id": "4",
+    "name": "LAMPS",
+    "thumbnailurl": "",
+    "subCategories": []
+  },
+  {
+    "id": "5",
+    "name": "BEDS",
+    "thumbnailurl": "",
+    "subCategories": []
+  },
+  {
+    "id": "6",
+    "name": "WARDROBES",
+    "thumbnailurl": "",
+    "subCategories": []
+  }
+]
