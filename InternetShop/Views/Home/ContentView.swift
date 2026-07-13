@@ -8,18 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showMainApp = false
+    
     var body: some View {
-        VStack {
-            Spacer()
-
-            BrandSection()
-
-            Spacer()
-
-            StartShopButton()
+        if showMainApp {
+            
+            MainTabView()
+            
         }
-        .padding(.horizontal, 24)
-        .padding(.bottom, 32)
+        else {
+            VStack {
+                Spacer()
+                
+                BrandSection()
+                
+                Spacer()
+                
+                StartShopButton {
+                    showMainApp = true
+                }
+            }
+            .padding(.horizontal, 24)
+            .padding(.bottom, 32)
+        }
     }
 }
 

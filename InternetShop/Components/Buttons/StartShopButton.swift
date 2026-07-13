@@ -5,16 +5,15 @@
 //  Created by myOS on 05.07.26.
 //
 
-import Foundation
 import SwiftUI
 
 struct StartShopButton: View {
 
+    let action: () -> Void
+
     var body: some View {
 
-        Button {
-
-        } label: {
+        Button(action: action) {
 
             Text("START SHOP")
                 .font(.headline)
@@ -24,5 +23,11 @@ struct StartShopButton: View {
                 .background(Color("Primary"))
                 .clipShape(RoundedRectangle(cornerRadius: 16))
         }
+    }
+}
+
+struct StartShopButton_Previews: PreviewProvider {
+    static var previews: some View {
+        StartShopButton {}
     }
 }
