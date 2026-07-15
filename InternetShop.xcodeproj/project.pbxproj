@@ -18,6 +18,8 @@
 		3E9F6E862FFABD3500D2E94F /* StartShopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F6E852FFABD3500D2E94F /* StartShopButton.swift */; };
 		B09660263006E7C000A14C67 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09660253006E7C000A14C67 /* AppColors.swift */; };
 		B09660283006E7E000A14C67 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09660273006E7E000A14C67 /* AppFonts.swift */; };
+		B0C4E9083007D4D70058C1B9 /* AppColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4E9073007D4D70058C1B9 /* AppColorTests.swift */; };
+		B0C4E90A3007D5F00058C1B9 /* AppFontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4E9093007D5F00058C1B9 /* AppFontTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		3E9F6E852FFABD3500D2E94F /* StartShopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartShopButton.swift; sourceTree = "<group>"; };
 		B09660253006E7C000A14C67 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		B09660273006E7E000A14C67 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		B0C4E9073007D4D70058C1B9 /* AppColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorTests.swift; sourceTree = "<group>"; };
+		B0C4E9093007D5F00058C1B9 /* AppFontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFontTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +115,6 @@
 				3EB6210F2FF9841D00D50DA9 /* Models */,
 				3EB6210E2FF9840200D50DA9 /* Views */,
 				3EB6210C2FF983CF00D50DA9 /* App */,
-				3E8B2B6E2FEEE8AC008BF7C3 /* Assets.xcassets */,
 				3E8B2B702FEEE8AC008BF7C3 /* Preview Content */,
 			);
 			path = InternetShop;
@@ -129,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				3E8B2B7B2FEEE8AC008BF7C3 /* InternetShopTests.swift */,
+				B0C4E9073007D4D70058C1B9 /* AppColorTests.swift */,
+				B0C4E9093007D5F00058C1B9 /* AppFontTests.swift */,
 			);
 			path = InternetShopTests;
 			sourceTree = "<group>";
@@ -205,7 +210,8 @@
 		3EB621152FF984A400D50DA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B09660273006E7E000A14C67 /* AppFonts.swift */,
+				B0C970CD3007EA60001E65B1 /* Fonts */,
+				3E8B2B6E2FEEE8AC008BF7C3 /* Assets.xcassets */,
 				B096602A3006EAEF00A14C67 /* Colors */,
 			);
 			path = Resources;
@@ -217,6 +223,14 @@
 				B09660253006E7C000A14C67 /* AppColors.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		B0C970CD3007EA60001E65B1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B09660273006E7E000A14C67 /* AppFonts.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,7 +376,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C4E90A3007D5F00058C1B9 /* AppFontTests.swift in Sources */,
 				3E8B2B7C2FEEE8AC008BF7C3 /* InternetShopTests.swift in Sources */,
+				B0C4E9083007D4D70058C1B9 /* AppColorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
