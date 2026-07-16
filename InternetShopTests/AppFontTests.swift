@@ -11,40 +11,38 @@ import SwiftUI
 
 final class AppFontTests: XCTestCase {
 
-    // MARK: - App Typography
-
-    func testAppNameFontExists() {
-        let font = Font.appName
-        XCTAssertNotNil(font)
+    func testAppName() {
+        XCTAssertEqual(AppTypography.appName.size, 20)
+        XCTAssertEqual(AppTypography.appName.weight, .bold)
     }
 
-    func testHeadlineFontExists() {
-        let font = Font.appHeadline
-        XCTAssertNotNil(font)
+    func testHeadline() {
+        XCTAssertEqual(AppTypography.headline.size, 17)
+        XCTAssertEqual(AppTypography.headline.weight, .semibold)
     }
 
-    func testInputFontExists() {
-        let font = Font.appInput
-        XCTAssertNotNil(font)
+    func testInput() {
+        XCTAssertEqual(AppTypography.input.size, 16)
+        XCTAssertEqual(AppTypography.input.weight, .regular)
     }
 
-    func testCardTitleFontExists() {
-        let font = Font.appCardTitle
-        XCTAssertNotNil(font)
+    func testCardTitle() {
+        XCTAssertEqual(AppTypography.cardTitle.size, 15)
+        XCTAssertEqual(AppTypography.cardTitle.weight, .regular)
     }
 
-    func testBodyFontExists() {
-        let font = Font.appBody
-        XCTAssertNotNil(font)
+    func testBody() {
+        XCTAssertEqual(AppTypography.body.size, 15)
+        XCTAssertEqual(AppTypography.body.weight, .regular)
     }
 
-    func testBodySemiboldFontExists() {
-        let font = Font.appBodySemibold
-        XCTAssertNotNil(font)
+    func testBodySemibold() {
+        XCTAssertEqual(AppTypography.bodySemibold.size, 15)
+        XCTAssertEqual(AppTypography.bodySemibold.weight, .semibold)
     }
 
-    func testCaptionFontExists() {
-        let font = Font.appCaption
-        XCTAssertNotNil(font)
+    func testCaption() {
+        XCTAssertEqual(AppTypography.caption.size, 12)
+        XCTAssertEqual(AppTypography.caption.weight, .regular)
     }
 }

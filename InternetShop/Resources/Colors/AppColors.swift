@@ -7,78 +7,76 @@
 
 import SwiftUI
 
+// MARK: - Color Palette
+
+enum AppPalette {
+    // Brand Colors
+    static let primary = (red: 162, green: 189, blue: 128)
+    static let darkGreen = (red: 128, green: 151, blue: 97)
+
+    // Accent Colors
+    static let green = (red: 52, green: 199, blue: 89)
+    static let yellow = (red: 233, green: 202, blue: 93)
+    static let red = (red: 255, green: 59, blue: 48)
+    
+    // Neutral Colors
+    static let gray = (red: 153, green: 153, blue: 153)
+    static let lightGray = (red: 229, green: 229, blue: 229)
+    static let disabled = (red: 237, green: 237, blue: 237)
+}
+
+// MARK: - App Colors
+
 extension Color {
 
-    // MARK: - Brand Colors
-
-    /// #A2BD80
     static let appPrimary = Color(
-        red: 162 / 255,
-        green: 189 / 255,
-        blue: 128 / 255
+        red: Double(AppPalette.primary.red) / 255,
+        green: Double(AppPalette.primary.green) / 255,
+        blue: Double(AppPalette.primary.blue) / 255
     )
 
-    /// #809761
     static let appDarkGreen = Color(
-        red: 128 / 255,
-        green: 151 / 255,
-        blue: 97 / 255
+        red: Double(AppPalette.darkGreen.red) / 255,
+        green: Double(AppPalette.darkGreen.green) / 255,
+        blue: Double(AppPalette.darkGreen.blue) / 255
     )
 
-    // MARK: - Accent Colors
-
-    /// #34C759
     static let appGreen = Color(
-        red: 52 / 255,
-        green: 199 / 255,
-        blue: 89 / 255
+        red: Double(AppPalette.green.red) / 255,
+        green: Double(AppPalette.green.green) / 255,
+        blue: Double(AppPalette.green.blue) / 255
     )
 
-    /// #E9CA5D
     static let appYellow = Color(
-        red: 233 / 255,
-        green: 202 / 255,
-        blue: 93 / 255
+        red: Double(AppPalette.yellow.red) / 255,
+        green: Double(AppPalette.yellow.green) / 255,
+        blue: Double(AppPalette.yellow.blue) / 255
     )
 
-    /// #FF3B30
     static let appRed = Color(
-        red: 255 / 255,
-        green: 59 / 255,
-        blue: 48 / 255
+        red: Double(AppPalette.red.red) / 255,
+        green: Double(AppPalette.red.green) / 255,
+        blue: Double(AppPalette.red.blue) / 255
     )
 
-    // MARK: - Neutral Colors
-
-    /// #999999
     static let appGray = Color(
-        red: 153 / 255,
-        green: 153 / 255,
-        blue: 153 / 255
+        red: Double(AppPalette.gray.red) / 255,
+        green: Double(AppPalette.gray.green) / 255,
+        blue: Double(AppPalette.gray.blue) / 255
     )
 
-    /// #E5E5E5
     static let appLightGray = Color(
-        red: 229 / 255,
-        green: 229 / 255,
-        blue: 229 / 255
+        red: Double(AppPalette.lightGray.red) / 255,
+        green: Double(AppPalette.lightGray.green) / 255,
+        blue: Double(AppPalette.lightGray.blue) / 255
     )
 
-    /// #EDEDED
     static let appDisabled = Color(
-        red: 237 / 255,
-        green: 237 / 255,
-        blue: 237 / 255
+        red: Double(AppPalette.disabled.red) / 255,
+        green: Double(AppPalette.disabled.green) / 255,
+        blue: Double(AppPalette.disabled.blue) / 255
     )
 
-    // MARK: - Base Colors
-
-    /// #000000
     static let appBlack = Color.black
-
-    /// #FFFFFF
     static let appWhite = Color.white
-
-    /// #FFFFFF
-    static let appBackground = Color.white
 }

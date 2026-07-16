@@ -11,66 +11,51 @@ import SwiftUI
 
 final class AppColorTests: XCTestCase {
 
-    // MARK: - Brand Colors
-
-    func testAppPrimaryColorExists() {
-        let color = Color.appPrimary
-        XCTAssertNotNil(color)
+    func testPrimaryColor() {
+        XCTAssertEqual(AppPalette.primary.red, 162)
+        XCTAssertEqual(AppPalette.primary.green, 189)
+        XCTAssertEqual(AppPalette.primary.blue, 128)
     }
 
-    func testAppDarkGreenColorExists() {
-        let color = Color.appDarkGreen
-        XCTAssertNotNil(color)
+    func testDarkGreenColor() {
+        XCTAssertEqual(AppPalette.darkGreen.red, 128)
+        XCTAssertEqual(AppPalette.darkGreen.green, 151)
+        XCTAssertEqual(AppPalette.darkGreen.blue, 97)
     }
 
-    // MARK: - Accent Colors
-
-    func testAppGreenColorExists() {
-        let color = Color.appGreen
-        XCTAssertNotNil(color)
+    func testGreenColor() {
+        XCTAssertEqual(AppPalette.green.red, 52)
+        XCTAssertEqual(AppPalette.green.green, 199)
+        XCTAssertEqual(AppPalette.green.blue, 89)
     }
 
-    func testAppYellowColorExists() {
-        let color = Color.appYellow
-        XCTAssertNotNil(color)
+    func testYellowColor() {
+        XCTAssertEqual(AppPalette.yellow.red, 233)
+        XCTAssertEqual(AppPalette.yellow.green, 202)
+        XCTAssertEqual(AppPalette.yellow.blue, 93)
     }
 
-    func testAppRedColorExists() {
-        let color = Color.appRed
-        XCTAssertNotNil(color)
+    func testRedColor() {
+        XCTAssertEqual(AppPalette.red.red, 255)
+        XCTAssertEqual(AppPalette.red.green, 59)
+        XCTAssertEqual(AppPalette.red.blue, 48)
     }
 
-    // MARK: - Neutral Colors
-
-    func testAppGrayColorExists() {
-        let color = Color.appGray
-        XCTAssertNotNil(color)
+    func testGrayColor() {
+        XCTAssertEqual(AppPalette.gray.red, 153)
+        XCTAssertEqual(AppPalette.gray.green, 153)
+        XCTAssertEqual(AppPalette.gray.blue, 153)
     }
 
-    func testAppLightGrayColorExists() {
-        let color = Color.appLightGray
-        XCTAssertNotNil(color)
+    func testLightGrayColor() {
+        XCTAssertEqual(AppPalette.lightGray.red, 229)
+        XCTAssertEqual(AppPalette.lightGray.green, 229)
+        XCTAssertEqual(AppPalette.lightGray.blue, 229)
     }
 
-    func testAppDisabledColorExists() {
-        let color = Color.appDisabled
-        XCTAssertNotNil(color)
-    }
-
-    // MARK: - Base Colors
-
-    func testAppBlackColorExists() {
-        let color = Color.appBlack
-        XCTAssertNotNil(color)
-    }
-
-    func testAppWhiteColorExists() {
-        let color = Color.appWhite
-        XCTAssertNotNil(color)
-    }
-
-    func testAppBackgroundColorExists() {
-        let color = Color.appBackground
-        XCTAssertNotNil(color)
+    func testDisabledColor() {
+        XCTAssertEqual(AppPalette.disabled.red, 237)
+        XCTAssertEqual(AppPalette.disabled.green, 237)
+        XCTAssertEqual(AppPalette.disabled.blue, 237)
     }
 }
