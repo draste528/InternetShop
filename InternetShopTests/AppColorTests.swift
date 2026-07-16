@@ -11,51 +11,47 @@ import SwiftUI
 
 final class AppColorTests: XCTestCase {
 
-    func testPrimaryColor() {
-        XCTAssertEqual(AppPalette.primary.red, 162)
-        XCTAssertEqual(AppPalette.primary.green, 189)
-        XCTAssertEqual(AppPalette.primary.blue, 128)
+    // MARK: - Brand Colors
+    func testAppPrimaryColor() {
+        XCTAssertEqual(Color.appPrimary, Color(red: 162/255, green: 189/255, blue: 128/255))
     }
 
-    func testDarkGreenColor() {
-        XCTAssertEqual(AppPalette.darkGreen.red, 128)
-        XCTAssertEqual(AppPalette.darkGreen.green, 151)
-        XCTAssertEqual(AppPalette.darkGreen.blue, 97)
+    func testAppDarkGreenColor() {
+        XCTAssertEqual(Color.appDarkGreen, Color(red: 128/255, green: 151/255, blue: 97/255))
     }
 
-    func testGreenColor() {
-        XCTAssertEqual(AppPalette.green.red, 52)
-        XCTAssertEqual(AppPalette.green.green, 199)
-        XCTAssertEqual(AppPalette.green.blue, 89)
+    // MARK: - Accent Colors
+    func testAppGreenColor() {
+        XCTAssertEqual(Color.appGreen, Color(red: 52/255, green: 199/255, blue: 89/255))
     }
 
-    func testYellowColor() {
-        XCTAssertEqual(AppPalette.yellow.red, 233)
-        XCTAssertEqual(AppPalette.yellow.green, 202)
-        XCTAssertEqual(AppPalette.yellow.blue, 93)
+    func testAppYellowColor() {
+        XCTAssertEqual(Color.appYellow, Color(red: 233/255, green: 202/255, blue: 93/255))
     }
 
-    func testRedColor() {
-        XCTAssertEqual(AppPalette.red.red, 255)
-        XCTAssertEqual(AppPalette.red.green, 59)
-        XCTAssertEqual(AppPalette.red.blue, 48)
+    func testAppRedColor() {
+        XCTAssertEqual(Color.appRed, Color(red: 255/255, green: 59/255, blue: 48/255))
     }
 
-    func testGrayColor() {
-        XCTAssertEqual(AppPalette.gray.red, 153)
-        XCTAssertEqual(AppPalette.gray.green, 153)
-        XCTAssertEqual(AppPalette.gray.blue, 153)
+    // MARK: - Neutral Colors
+    func testAppGrayColor() {
+        XCTAssertEqual(Color.appGray, Color(red: 153/255, green: 153/255, blue: 153/255))
     }
 
-    func testLightGrayColor() {
-        XCTAssertEqual(AppPalette.lightGray.red, 229)
-        XCTAssertEqual(AppPalette.lightGray.green, 229)
-        XCTAssertEqual(AppPalette.lightGray.blue, 229)
+    func testAppLightGrayColor() {
+        XCTAssertEqual(Color.appLightGray, Color(red: 229/255, green: 229/255, blue: 229/255))
     }
 
-    func testDisabledColor() {
-        XCTAssertEqual(AppPalette.disabled.red, 237)
-        XCTAssertEqual(AppPalette.disabled.green, 237)
-        XCTAssertEqual(AppPalette.disabled.blue, 237)
+    func testAppDisabledColor() {
+        XCTAssertEqual(Color.appDisabled, Color(red: 237/255, green: 237/255, blue: 237/255))
+    }
+
+    // MARK: - Base Colors
+    func testAppBlackColor() {
+        XCTAssertEqual(Color.appBlack, Color.black)
+    }
+
+    func testAppWhiteColor() {
+        XCTAssertEqual(Color.appWhite, Color.white)
     }
 }
