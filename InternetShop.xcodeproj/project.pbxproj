@@ -14,6 +14,12 @@
 		3E8B2B7C2FEEE8AC008BF7C3 /* InternetShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B2B7B2FEEE8AC008BF7C3 /* InternetShopTests.swift */; };
 		3E8B2B862FEEE8AC008BF7C3 /* InternetShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B2B852FEEE8AC008BF7C3 /* InternetShopUITests.swift */; };
 		3E8B2B882FEEE8AC008BF7C3 /* InternetShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B2B872FEEE8AC008BF7C3 /* InternetShopUITestsLaunchTests.swift */; };
+		3E9F6E842FFABCD800D2E94F /* BrandSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F6E832FFABCD800D2E94F /* BrandSection.swift */; };
+		3E9F6E862FFABD3500D2E94F /* StartShopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F6E852FFABD3500D2E94F /* StartShopButton.swift */; };
+		B09660263006E7C000A14C67 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09660253006E7C000A14C67 /* AppColors.swift */; };
+		B09660283006E7E000A14C67 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09660273006E7E000A14C67 /* AppFonts.swift */; };
+		B0C4E9083007D4D70058C1B9 /* AppColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4E9073007D4D70058C1B9 /* AppColorTests.swift */; };
+		B0C4E90A3007D5F00058C1B9 /* AppFontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4E9093007D5F00058C1B9 /* AppFontTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		3E8B2B812FEEE8AC008BF7C3 /* InternetShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InternetShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8B2B852FEEE8AC008BF7C3 /* InternetShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetShopUITests.swift; sourceTree = "<group>"; };
 		3E8B2B872FEEE8AC008BF7C3 /* InternetShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3E9F6E832FFABCD800D2E94F /* BrandSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandSection.swift; sourceTree = "<group>"; };
+		3E9F6E852FFABD3500D2E94F /* StartShopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartShopButton.swift; sourceTree = "<group>"; };
+		B09660253006E7C000A14C67 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		B09660273006E7E000A14C67 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		B0C4E9073007D4D70058C1B9 /* AppColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorTests.swift; sourceTree = "<group>"; };
+		B0C4E9093007D5F00058C1B9 /* AppFontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFontTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +106,15 @@
 		3E8B2B692FEEE8AB008BF7C3 /* InternetShop */ = {
 			isa = PBXGroup;
 			children = (
-				3E8B2B6A2FEEE8AB008BF7C3 /* InternetShopApp.swift */,
-				3E8B2B6C2FEEE8AB008BF7C3 /* ContentView.swift */,
-				3E8B2B6E2FEEE8AC008BF7C3 /* Assets.xcassets */,
+				3EB621152FF984A400D50DA9 /* Resources */,
+				3EB621142FF9849700D50DA9 /* Extensions */,
+				3EB621132FF9847600D50DA9 /* Components */,
+				3EB621122FF9845A00D50DA9 /* Networking */,
+				3EB621112FF9843B00D50DA9 /* Services */,
+				3EB621102FF9842D00D50DA9 /* ViewModels */,
+				3EB6210F2FF9841D00D50DA9 /* Models */,
+				3EB6210E2FF9840200D50DA9 /* Views */,
+				3EB6210C2FF983CF00D50DA9 /* App */,
 				3E8B2B702FEEE8AC008BF7C3 /* Preview Content */,
 			);
 			path = InternetShop;
@@ -114,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				3E8B2B7B2FEEE8AC008BF7C3 /* InternetShopTests.swift */,
+				B0C4E9073007D4D70058C1B9 /* AppColorTests.swift */,
+				B0C4E9093007D5F00058C1B9 /* AppFontTests.swift */,
 			);
 			path = InternetShopTests;
 			sourceTree = "<group>";
@@ -125,6 +145,92 @@
 				3E8B2B872FEEE8AC008BF7C3 /* InternetShopUITestsLaunchTests.swift */,
 			);
 			path = InternetShopUITests;
+			sourceTree = "<group>";
+		};
+		3EB6210C2FF983CF00D50DA9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3E8B2B6A2FEEE8AB008BF7C3 /* InternetShopApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3EB6210E2FF9840200D50DA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E8B2B6C2FEEE8AB008BF7C3 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3EB6210F2FF9841D00D50DA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3EB621102FF9842D00D50DA9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3EB621112FF9843B00D50DA9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3EB621122FF9845A00D50DA9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3EB621132FF9847600D50DA9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3E9F6E832FFABCD800D2E94F /* BrandSection.swift */,
+				3E9F6E852FFABD3500D2E94F /* StartShopButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3EB621142FF9849700D50DA9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3EB621152FF984A400D50DA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0C970CD3007EA60001E65B1 /* Fonts */,
+				3E8B2B6E2FEEE8AC008BF7C3 /* Assets.xcassets */,
+				B096602A3006EAEF00A14C67 /* Colors */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B096602A3006EAEF00A14C67 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				B09660253006E7C000A14C67 /* AppColors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		B0C970CD3007EA60001E65B1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B09660273006E7E000A14C67 /* AppFonts.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +363,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B09660283006E7E000A14C67 /* AppFonts.swift in Sources */,
+				3E9F6E862FFABD3500D2E94F /* StartShopButton.swift in Sources */,
+				3E9F6E842FFABCD800D2E94F /* BrandSection.swift in Sources */,
 				3E8B2B6D2FEEE8AB008BF7C3 /* ContentView.swift in Sources */,
+				B09660263006E7C000A14C67 /* AppColors.swift in Sources */,
 				3E8B2B6B2FEEE8AB008BF7C3 /* InternetShopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +376,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C4E90A3007D5F00058C1B9 /* AppFontTests.swift in Sources */,
 				3E8B2B7C2FEEE8AC008BF7C3 /* InternetShopTests.swift in Sources */,
+				B0C4E9083007D4D70058C1B9 /* AppColorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
