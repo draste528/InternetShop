@@ -20,6 +20,11 @@
 		B09660283006E7E000A14C67 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09660273006E7E000A14C67 /* AppFonts.swift */; };
 		B0C4E9083007D4D70058C1B9 /* AppColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4E9073007D4D70058C1B9 /* AppColorTests.swift */; };
 		B0C4E90A3007D5F00058C1B9 /* AppFontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4E9093007D5F00058C1B9 /* AppFontTests.swift */; };
+		B0C9E72530114DF50074D89E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9E72430114DF50074D89E /* SettingsView.swift */; };
+		B0C9E72830114E060074D89E /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9E72730114E060074D89E /* FavoritesView.swift */; };
+		B0C9E72B30114E100074D89E /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9E72A30114E100074D89E /* CatalogView.swift */; };
+		B0C9E72D30114E240074D89E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9E72C30114E240074D89E /* MainTabView.swift */; };
+		B0C9E73130114E600074D89E /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9E73030114E600074D89E /* CartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,11 @@
 		B09660273006E7E000A14C67 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		B0C4E9073007D4D70058C1B9 /* AppColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorTests.swift; sourceTree = "<group>"; };
 		B0C4E9093007D5F00058C1B9 /* AppFontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFontTests.swift; sourceTree = "<group>"; };
+		B0C9E72430114DF50074D89E /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B0C9E72730114E060074D89E /* FavoritesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		B0C9E72A30114E100074D89E /* CatalogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		B0C9E72C30114E240074D89E /* MainTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabView.swift; path = ../../../../Downloads/timeeee/MainTabView.swift; sourceTree = "<group>"; };
+		B0C9E73030114E600074D89E /* CartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +168,12 @@
 		3EB6210E2FF9840200D50DA9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3E8B2B6C2FEEE8AB008BF7C3 /* ContentView.swift */,
+				B0C9E72F30114E600074D89E /* Cart */,
+				B0C9E72C30114E240074D89E /* MainTabView.swift */,
+				B0C9E72E30114E350074D89E /* Home */,
+				B0C9E72930114E100074D89E /* Catalog */,
+				B0C9E72630114E060074D89E /* Favorites */,
+				B0C9E72330114DF50074D89E /* Settings */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,8 +209,8 @@
 		3EB621132FF9847600D50DA9 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				3E9F6E832FFABCD800D2E94F /* BrandSection.swift */,
-				3E9F6E852FFABD3500D2E94F /* StartShopButton.swift */,
+				B0C9E73330114EA80074D89E /* Brand */,
+				B0C9E73230114E920074D89E /* Buttons */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -231,6 +246,66 @@
 				B09660273006E7E000A14C67 /* AppFonts.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B0C9E72330114DF50074D89E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B0C9E72430114DF50074D89E /* SettingsView.swift */,
+			);
+			name = Settings;
+			path = ../../../../Downloads/timeeee/Settings;
+			sourceTree = "<group>";
+		};
+		B0C9E72630114E060074D89E /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				B0C9E72730114E060074D89E /* FavoritesView.swift */,
+			);
+			name = Favorites;
+			path = ../../../../Downloads/timeeee/Favorites;
+			sourceTree = "<group>";
+		};
+		B0C9E72930114E100074D89E /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				B0C9E72A30114E100074D89E /* CatalogView.swift */,
+			);
+			name = Catalog;
+			path = ../../../../Downloads/timeeee/Catalog;
+			sourceTree = "<group>";
+		};
+		B0C9E72E30114E350074D89E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3E8B2B6C2FEEE8AB008BF7C3 /* ContentView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B0C9E72F30114E600074D89E /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				B0C9E73030114E600074D89E /* CartView.swift */,
+			);
+			name = Cart;
+			path = ../../../../Downloads/timeeee/Cart;
+			sourceTree = "<group>";
+		};
+		B0C9E73230114E920074D89E /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3E9F6E852FFABD3500D2E94F /* StartShopButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		B0C9E73330114EA80074D89E /* Brand */ = {
+			isa = PBXGroup;
+			children = (
+				3E9F6E832FFABCD800D2E94F /* BrandSection.swift */,
+			);
+			path = Brand;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,12 +438,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C9E72530114DF50074D89E /* SettingsView.swift in Sources */,
+				B0C9E72B30114E100074D89E /* CatalogView.swift in Sources */,
 				B09660283006E7E000A14C67 /* AppFonts.swift in Sources */,
 				3E9F6E862FFABD3500D2E94F /* StartShopButton.swift in Sources */,
 				3E9F6E842FFABCD800D2E94F /* BrandSection.swift in Sources */,
+				B0C9E72830114E060074D89E /* FavoritesView.swift in Sources */,
+				B0C9E73130114E600074D89E /* CartView.swift in Sources */,
 				3E8B2B6D2FEEE8AB008BF7C3 /* ContentView.swift in Sources */,
 				B09660263006E7C000A14C67 /* AppColors.swift in Sources */,
 				3E8B2B6B2FEEE8AB008BF7C3 /* InternetShopApp.swift in Sources */,
+				B0C9E72D30114E240074D89E /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
